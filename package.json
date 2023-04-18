@@ -13,16 +13,16 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@expo/webpack-config": "^18.0.1",
     "@reduxjs/toolkit": "^1.9.4",
     "expo": "~48.0.11",
     "expo-status-bar": "~1.4.4",
     "react": "18.2.0",
-    "react-native": "0.71.6",
-    "react-redux": "^8.0.5",
-    "redux": "^4.2.1",
-    "react-native-web": "~0.18.10",
     "react-dom": "18.2.0",
-    "@expo/webpack-config": "^18.0.1"
+    "react-native": "0.71.6",
+    "react-native-web": "~0.18.10",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -30,8 +30,13 @@
     "@types/jest": "^29.5.0",
     "@types/react": "~18.0.14",
     "@types/react-test-renderer": "^18.0.0",
-    "typescript": "^4.9.5",
-    "husky": "^8.0.0"
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.38.0",
+    "eslint-config-xo": "^0.43.1",
+    "eslint-config-xo-typescript": "^0.57.0",
+    "husky": "^8.0.0",
+    "typescript": "^5.0.4"
   },
   "private": true
 }
