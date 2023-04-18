@@ -3,10 +3,10 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: "xo",
+  extends: ["plugin:react/recommended", "xo", "prettier"],
   overrides: [
     {
-      extends: ["xo-typescript"],
+      extends: ["xo-typescript", "prettier"],
       files: ["*.ts", "*.tsx"],
     },
   ],
