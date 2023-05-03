@@ -6,8 +6,26 @@ module.exports = {
   extends: ["plugin:react/recommended", "xo", "prettier"],
   overrides: [
     {
+      rules: {
+        "@typescript-eslint/consistent-type-definitions": [
+          "error",
+          "interface",
+        ],
+      },
       extends: ["xo-typescript", "prettier"],
       files: ["*.ts", "*.tsx"],
+    },
+    {
+      files: ["src/**/types/**/*.d.ts", "src/**/hooks/**/*.ts"],
+      rules: { "@typescript-eslint/naming-convention": "off" },
+    },
+    {
+      files: ["src/**/*.test.ts", "src/**/*.test.tsx"],
+      rules: {
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-return": "off",
+      },
     },
   ],
   parserOptions: {
